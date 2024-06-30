@@ -1,0 +1,13 @@
+p=0
+u=0
+n=int(input())
+a=list(map(int,input().split()))
+for i in range(len(a)):
+    if a[i]>=1:
+        p=p+a[i]
+    else:
+        if p==0:
+            u=u+1
+        else:
+            p=p-1
+print(u)

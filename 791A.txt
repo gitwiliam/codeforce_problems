@@ -1,0 +1,10 @@
+li,bob=map(int,input().split())
+
+def pr(li,bob):
+    year=0
+    while li<=bob:
+        li=li*3
+        bob=bob*2
+        year+=1
+    return year
+print(pr(li,bob))
